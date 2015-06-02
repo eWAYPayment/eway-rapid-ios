@@ -1,28 +1,20 @@
-# eWAYPaymentsSDK
+# eWAY iOS SDK
 
-[![CI Status](http://img.shields.io/travis/eWAYTony/eWAYPaymentsSDK.svg?style=flat)](https://travis-ci.org/eWAYTony/eWAYPaymentsSDK)
-[![Version](https://img.shields.io/cocoapods/v/eWAYPaymentsSDK.svg?style=flat)](http://cocoapods.org/pods/eWAYPaymentsSDK)
-[![License](https://img.shields.io/cocoapods/l/eWAYPaymentsSDK.svg?style=flat)](http://cocoapods.org/pods/eWAYPaymentsSDK)
-[![Platform](https://img.shields.io/cocoapods/p/eWAYPaymentsSDK.svg?style=flat)](http://cocoapods.org/pods/eWAYPaymentsSDK)
+Quickly integrate eWAY into your iOS app with this SDK! This SDK provides handy functions to easily encrypt card data or process payments directly with eWAY.
 
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
 ## Installation
 
-eWAYPaymentsSDK is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+eWAYPaymentsSDK will soon be available available through [CocoaPods](http://cocoapods.org). 
+
+Until it is available, simply add the following line to your Podfile to install the library:
 
 ```ruby
-pod "eWAYPaymentsSDK"
+pod 'eWAYPaymentsSDK', :git=>'https://github.com/eWAYPayment/eWAYPaymentsSDK.git'
 ```
-
-## Author
-
-eWAYTony, tony@eway.com.au
 
 ## License
 
