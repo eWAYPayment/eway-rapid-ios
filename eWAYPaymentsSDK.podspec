@@ -9,19 +9,14 @@
 
 Pod::Spec.new do |s|
   s.name             = "eWAYPaymentsSDK"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of eWAYPaymentsSDK."
-  s.description      = <<-DESC
-                       An optional longer description of eWAYPaymentsSDK
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/eWAYPaymentsSDK"
+  s.version          = "1.0.0-Beta1"
+  s.summary          = "eWAYPaymentsSDK allows eway payment to be performed directly from any compatible iOS device."
+  s.description      = "eWAYPaymentsSDK allows eway payment to be performed directly from any compatible iOS device. Below are steps needed to be done before using the SDK in your application"
+  s.homepage         = "https://github.com/eWAYPayment/eWAYPaymentsSDK"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "eWAYTony" => "tony@eway.com.au" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/eWAYPaymentsSDK.git", :tag => s.version.to_s }
+  s.author           = { "eWAY" => "tony@eway.com.au" }
+  s.source           = { :git => "https://github.com/eWAYPayment/eWAYPaymentsSDK.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'

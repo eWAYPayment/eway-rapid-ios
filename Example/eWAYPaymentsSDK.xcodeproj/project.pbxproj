@@ -14,9 +14,6 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* eWAYPaymentsSDKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* eWAYPaymentsSDKAppDelegate.m */; };
-		6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F59F195388D20070C39A /* Main_iPhone.storyboard */; };
-		6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A2195388D20070C39A /* Main_iPad.storyboard */; };
-		6003F5A7195388D20070C39A /* eWAYPaymentsSDKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* eWAYPaymentsSDKViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -24,6 +21,26 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6B718D11E71B39B1CE91BE8E /* Pods_eWAYPaymentsSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D1405F4987667EAE258F06 /* Pods_eWAYPaymentsSDK_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E29FC4A21B1D79CF005C37C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29FC4A01B1D79CF005C37C9 /* Main.storyboard */; };
+		E29FC4CD1B1D7A99005C37C9 /* EncryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4A61B1D7A99005C37C9 /* EncryptViewController.m */; };
+		E29FC4CE1B1D7A99005C37C9 /* InputNVpairViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4A81B1D7A99005C37C9 /* InputNVpairViewController.m */; };
+		E29FC4CF1B1D7A99005C37C9 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4AB1B1D7A99005C37C9 /* MBProgressHUD.m */; };
+		E29FC4D01B1D7A99005C37C9 /* InputAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4AE1B1D7A99005C37C9 /* InputAddressViewController.m */; };
+		E29FC4D11B1D7A99005C37C9 /* InputCardDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4B01B1D7A99005C37C9 /* InputCardDetailViewController.m */; };
+		E29FC4D21B1D7A99005C37C9 /* InputCustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4B21B1D7A99005C37C9 /* InputCustomerViewController.m */; };
+		E29FC4D31B1D7A99005C37C9 /* InputLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4B41B1D7A99005C37C9 /* InputLineViewController.m */; };
+		E29FC4D41B1D7A99005C37C9 /* InputMethodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4B61B1D7A99005C37C9 /* InputMethodTableViewController.m */; };
+		E29FC4D51B1D7A99005C37C9 /* InputPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4B81B1D7A99005C37C9 /* InputPaymentViewController.m */; };
+		E29FC4D61B1D7A99005C37C9 /* InputShippingDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4BA1B1D7A99005C37C9 /* InputShippingDetailViewController.m */; };
+		E29FC4D71B1D7A99005C37C9 /* LinesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4BC1B1D7A99005C37C9 /* LinesTableViewController.m */; };
+		E29FC4D81B1D7A99005C37C9 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4BE1B1D7A99005C37C9 /* PaymentViewController.m */; };
+		E29FC4D91B1D7A99005C37C9 /* TransactionTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4C01B1D7A99005C37C9 /* TransactionTypeViewController.m */; };
+		E29FC4DA1B1D7A99005C37C9 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4C31B1D7A99005C37C9 /* TPKeyboardAvoidingCollectionView.m */; };
+		E29FC4DB1B1D7A99005C37C9 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4C51B1D7A99005C37C9 /* TPKeyboardAvoidingScrollView.m */; };
+		E29FC4DC1B1D7A99005C37C9 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4C71B1D7A99005C37C9 /* TPKeyboardAvoidingTableView.m */; };
+		E29FC4DD1B1D7A99005C37C9 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4C91B1D7A99005C37C9 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		E29FC4DE1B1D7A99005C37C9 /* UserMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4CC1B1D7A99005C37C9 /* UserMessageViewController.m */; };
+		E29FC4E11B1D7B04005C37C9 /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4E01B1D7B04005C37C9 /* DashboardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +55,7 @@
 
 /* Begin PBXFileReference section */
 		4E57D2946DA48DCF895F0A2E /* eWAYPaymentsSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = eWAYPaymentsSDK.podspec; path = ../eWAYPaymentsSDK.podspec; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* eWAYPaymentsSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = eWAYPaymentsSDK.app; path = eWAYPaymentsSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* eWAYPaymentsSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eWAYPaymentsSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -48,12 +65,8 @@
 		6003F59B195388D20070C39A /* eWAYPaymentsSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eWAYPaymentsSDK-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* eWAYPaymentsSDKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eWAYPaymentsSDKAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* eWAYPaymentsSDKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eWAYPaymentsSDKAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A0195388D20070C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		6003F5A3195388D20070C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* eWAYPaymentsSDKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eWAYPaymentsSDKViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* eWAYPaymentsSDKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eWAYPaymentsSDKViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = eWAYPaymentsSDK_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* eWAYPaymentsSDK_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eWAYPaymentsSDK_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -66,6 +79,45 @@
 		D3A283F05955E11E2B3EBC5E /* Pods-eWAYPaymentsSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eWAYPaymentsSDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eWAYPaymentsSDK_Example/Pods-eWAYPaymentsSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D3C0C81A642EA8388056D441 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D3D1405F4987667EAE258F06 /* Pods_eWAYPaymentsSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eWAYPaymentsSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29FC4A11B1D79CF005C37C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E29FC4A51B1D7A99005C37C9 /* EncryptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptViewController.h; sourceTree = "<group>"; };
+		E29FC4A61B1D7A99005C37C9 /* EncryptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptViewController.m; sourceTree = "<group>"; };
+		E29FC4A71B1D7A99005C37C9 /* InputNVpairViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputNVpairViewController.h; sourceTree = "<group>"; };
+		E29FC4A81B1D7A99005C37C9 /* InputNVpairViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputNVpairViewController.m; sourceTree = "<group>"; };
+		E29FC4AA1B1D7A99005C37C9 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		E29FC4AB1B1D7A99005C37C9 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		E29FC4AD1B1D7A99005C37C9 /* InputAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputAddressViewController.h; sourceTree = "<group>"; };
+		E29FC4AE1B1D7A99005C37C9 /* InputAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputAddressViewController.m; sourceTree = "<group>"; };
+		E29FC4AF1B1D7A99005C37C9 /* InputCardDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputCardDetailViewController.h; sourceTree = "<group>"; };
+		E29FC4B01B1D7A99005C37C9 /* InputCardDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputCardDetailViewController.m; sourceTree = "<group>"; };
+		E29FC4B11B1D7A99005C37C9 /* InputCustomerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputCustomerViewController.h; sourceTree = "<group>"; };
+		E29FC4B21B1D7A99005C37C9 /* InputCustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputCustomerViewController.m; sourceTree = "<group>"; };
+		E29FC4B31B1D7A99005C37C9 /* InputLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputLineViewController.h; sourceTree = "<group>"; };
+		E29FC4B41B1D7A99005C37C9 /* InputLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputLineViewController.m; sourceTree = "<group>"; };
+		E29FC4B51B1D7A99005C37C9 /* InputMethodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputMethodTableViewController.h; sourceTree = "<group>"; };
+		E29FC4B61B1D7A99005C37C9 /* InputMethodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputMethodTableViewController.m; sourceTree = "<group>"; };
+		E29FC4B71B1D7A99005C37C9 /* InputPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputPaymentViewController.h; sourceTree = "<group>"; };
+		E29FC4B81B1D7A99005C37C9 /* InputPaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputPaymentViewController.m; sourceTree = "<group>"; };
+		E29FC4B91B1D7A99005C37C9 /* InputShippingDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputShippingDetailViewController.h; sourceTree = "<group>"; };
+		E29FC4BA1B1D7A99005C37C9 /* InputShippingDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputShippingDetailViewController.m; sourceTree = "<group>"; };
+		E29FC4BB1B1D7A99005C37C9 /* LinesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinesTableViewController.h; sourceTree = "<group>"; };
+		E29FC4BC1B1D7A99005C37C9 /* LinesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinesTableViewController.m; sourceTree = "<group>"; };
+		E29FC4BD1B1D7A99005C37C9 /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
+		E29FC4BE1B1D7A99005C37C9 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
+		E29FC4BF1B1D7A99005C37C9 /* TransactionTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionTypeViewController.h; sourceTree = "<group>"; };
+		E29FC4C01B1D7A99005C37C9 /* TransactionTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionTypeViewController.m; sourceTree = "<group>"; };
+		E29FC4C21B1D7A99005C37C9 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		E29FC4C31B1D7A99005C37C9 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		E29FC4C41B1D7A99005C37C9 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		E29FC4C51B1D7A99005C37C9 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		E29FC4C61B1D7A99005C37C9 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		E29FC4C71B1D7A99005C37C9 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		E29FC4C81B1D7A99005C37C9 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		E29FC4C91B1D7A99005C37C9 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		E29FC4CB1B1D7A99005C37C9 /* UserMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMessageViewController.h; sourceTree = "<group>"; };
+		E29FC4CC1B1D7A99005C37C9 /* UserMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMessageViewController.m; sourceTree = "<group>"; };
+		E29FC4DF1B1D7B04005C37C9 /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
+		E29FC4E01B1D7B04005C37C9 /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
 		E423505E6086B4FD9861DA96 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,8 +173,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* eWAYPaymentsSDK.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* eWAYPaymentsSDK_Example.app */,
+				6003F5AE195388D20070C39A /* eWAYPaymentsSDK_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,12 +195,16 @@
 		6003F593195388D20070C39A /* Example for eWAYPaymentsSDK */ = {
 			isa = PBXGroup;
 			children = (
+				E29FC4DF1B1D7B04005C37C9 /* DashboardViewController.h */,
+				E29FC4E01B1D7B04005C37C9 /* DashboardViewController.m */,
 				6003F59C195388D20070C39A /* eWAYPaymentsSDKAppDelegate.h */,
 				6003F59D195388D20070C39A /* eWAYPaymentsSDKAppDelegate.m */,
-				6003F59F195388D20070C39A /* Main_iPhone.storyboard */,
-				6003F5A2195388D20070C39A /* Main_iPad.storyboard */,
-				6003F5A5195388D20070C39A /* eWAYPaymentsSDKViewController.h */,
-				6003F5A6195388D20070C39A /* eWAYPaymentsSDKViewController.m */,
+				E29FC4A01B1D79CF005C37C9 /* Main.storyboard */,
+				E29FC4A41B1D7A99005C37C9 /* Encrypt */,
+				E29FC4A91B1D7A99005C37C9 /* MBProgressHUD */,
+				E29FC4AC1B1D7A99005C37C9 /* SubmitPayment */,
+				E29FC4C11B1D7A99005C37C9 /* TPKeyboardAvoiding */,
+				E29FC4CA1B1D7A99005C37C9 /* UserMessage */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -196,6 +252,77 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		E29FC4A41B1D7A99005C37C9 /* Encrypt */ = {
+			isa = PBXGroup;
+			children = (
+				E29FC4A51B1D7A99005C37C9 /* EncryptViewController.h */,
+				E29FC4A61B1D7A99005C37C9 /* EncryptViewController.m */,
+				E29FC4A71B1D7A99005C37C9 /* InputNVpairViewController.h */,
+				E29FC4A81B1D7A99005C37C9 /* InputNVpairViewController.m */,
+			);
+			path = Encrypt;
+			sourceTree = "<group>";
+		};
+		E29FC4A91B1D7A99005C37C9 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				E29FC4AA1B1D7A99005C37C9 /* MBProgressHUD.h */,
+				E29FC4AB1B1D7A99005C37C9 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		E29FC4AC1B1D7A99005C37C9 /* SubmitPayment */ = {
+			isa = PBXGroup;
+			children = (
+				E29FC4AD1B1D7A99005C37C9 /* InputAddressViewController.h */,
+				E29FC4AE1B1D7A99005C37C9 /* InputAddressViewController.m */,
+				E29FC4AF1B1D7A99005C37C9 /* InputCardDetailViewController.h */,
+				E29FC4B01B1D7A99005C37C9 /* InputCardDetailViewController.m */,
+				E29FC4B11B1D7A99005C37C9 /* InputCustomerViewController.h */,
+				E29FC4B21B1D7A99005C37C9 /* InputCustomerViewController.m */,
+				E29FC4B31B1D7A99005C37C9 /* InputLineViewController.h */,
+				E29FC4B41B1D7A99005C37C9 /* InputLineViewController.m */,
+				E29FC4B51B1D7A99005C37C9 /* InputMethodTableViewController.h */,
+				E29FC4B61B1D7A99005C37C9 /* InputMethodTableViewController.m */,
+				E29FC4B71B1D7A99005C37C9 /* InputPaymentViewController.h */,
+				E29FC4B81B1D7A99005C37C9 /* InputPaymentViewController.m */,
+				E29FC4B91B1D7A99005C37C9 /* InputShippingDetailViewController.h */,
+				E29FC4BA1B1D7A99005C37C9 /* InputShippingDetailViewController.m */,
+				E29FC4BB1B1D7A99005C37C9 /* LinesTableViewController.h */,
+				E29FC4BC1B1D7A99005C37C9 /* LinesTableViewController.m */,
+				E29FC4BD1B1D7A99005C37C9 /* PaymentViewController.h */,
+				E29FC4BE1B1D7A99005C37C9 /* PaymentViewController.m */,
+				E29FC4BF1B1D7A99005C37C9 /* TransactionTypeViewController.h */,
+				E29FC4C01B1D7A99005C37C9 /* TransactionTypeViewController.m */,
+			);
+			path = SubmitPayment;
+			sourceTree = "<group>";
+		};
+		E29FC4C11B1D7A99005C37C9 /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				E29FC4C21B1D7A99005C37C9 /* TPKeyboardAvoidingCollectionView.h */,
+				E29FC4C31B1D7A99005C37C9 /* TPKeyboardAvoidingCollectionView.m */,
+				E29FC4C41B1D7A99005C37C9 /* TPKeyboardAvoidingScrollView.h */,
+				E29FC4C51B1D7A99005C37C9 /* TPKeyboardAvoidingScrollView.m */,
+				E29FC4C61B1D7A99005C37C9 /* TPKeyboardAvoidingTableView.h */,
+				E29FC4C71B1D7A99005C37C9 /* TPKeyboardAvoidingTableView.m */,
+				E29FC4C81B1D7A99005C37C9 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				E29FC4C91B1D7A99005C37C9 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		E29FC4CA1B1D7A99005C37C9 /* UserMessage */ = {
+			isa = PBXGroup;
+			children = (
+				E29FC4CB1B1D7A99005C37C9 /* UserMessageViewController.h */,
+				E29FC4CC1B1D7A99005C37C9 /* UserMessageViewController.m */,
+			);
+			path = UserMessage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,7 +343,7 @@
 			);
 			name = eWAYPaymentsSDK_Example;
 			productName = eWAYPaymentsSDK;
-			productReference = 6003F58A195388D20070C39A /* eWAYPaymentsSDK.app */;
+			productReference = 6003F58A195388D20070C39A /* eWAYPaymentsSDK_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* eWAYPaymentsSDK_Tests */ = {
@@ -237,7 +364,7 @@
 			);
 			name = eWAYPaymentsSDK_Tests;
 			productName = eWAYPaymentsSDKTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* eWAYPaymentsSDK_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -279,9 +406,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */,
+				E29FC4A21B1D79CF005C37C9 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,8 +520,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E29FC4D51B1D7A99005C37C9 /* InputPaymentViewController.m in Sources */,
+				E29FC4DA1B1D7A99005C37C9 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				E29FC4D91B1D7A99005C37C9 /* TransactionTypeViewController.m in Sources */,
+				E29FC4CE1B1D7A99005C37C9 /* InputNVpairViewController.m in Sources */,
+				E29FC4D31B1D7A99005C37C9 /* InputLineViewController.m in Sources */,
+				E29FC4E11B1D7B04005C37C9 /* DashboardViewController.m in Sources */,
+				E29FC4D81B1D7A99005C37C9 /* PaymentViewController.m in Sources */,
+				E29FC4D61B1D7A99005C37C9 /* InputShippingDetailViewController.m in Sources */,
+				E29FC4CF1B1D7A99005C37C9 /* MBProgressHUD.m in Sources */,
+				E29FC4D21B1D7A99005C37C9 /* InputCustomerViewController.m in Sources */,
+				E29FC4DD1B1D7A99005C37C9 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				E29FC4D41B1D7A99005C37C9 /* InputMethodTableViewController.m in Sources */,
+				E29FC4D71B1D7A99005C37C9 /* LinesTableViewController.m in Sources */,
 				6003F59E195388D20070C39A /* eWAYPaymentsSDKAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* eWAYPaymentsSDKViewController.m in Sources */,
+				E29FC4DC1B1D7A99005C37C9 /* TPKeyboardAvoidingTableView.m in Sources */,
+				E29FC4CD1B1D7A99005C37C9 /* EncryptViewController.m in Sources */,
+				E29FC4D01B1D7A99005C37C9 /* InputAddressViewController.m in Sources */,
+				E29FC4DB1B1D7A99005C37C9 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				E29FC4DE1B1D7A99005C37C9 /* UserMessageViewController.m in Sources */,
+				E29FC4D11B1D7A99005C37C9 /* InputCardDetailViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,28 +571,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		6003F59F195388D20070C39A /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F5A0195388D20070C39A /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		6003F5A2195388D20070C39A /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F5A3195388D20070C39A /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6003F5B9195388D20070C39A /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E29FC4A01B1D79CF005C37C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E29FC4A11B1D79CF005C37C9 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

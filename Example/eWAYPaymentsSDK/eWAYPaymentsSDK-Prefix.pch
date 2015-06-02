@@ -14,3 +14,10 @@
     @import UIKit;
     @import Foundation;
 #endif
+
+#define kCustomAlertWithParam(msg) dispatch_async(dispatch_get_main_queue(), ^{\
+[[[UIAlertView alloc] initWithTitle:@"eWay SDK" message:msg delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];\
+});
+
+
+#import "MBProgressHUD.h"

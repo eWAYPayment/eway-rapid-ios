@@ -7,12 +7,16 @@
 //
 
 #import "eWAYPaymentsSDKAppDelegate.h"
+#import "RapidAPI.h"
 
 @implementation eWAYPaymentsSDKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [[RapidAPI sharedManager] setRapidEndpoint:@"http://api.sandbox.ewaypayments.com/staging-au/"];
+    [[RapidAPI sharedManager] setPublicAPIKey:@"epk-6C961B95-D93A-443C-BCB9-64B6DBDC1C1B"];
+
     return YES;
 }
 							
