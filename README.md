@@ -1,15 +1,15 @@
 # eWAY iOS SDK
 
 Quickly integrate [eWAY](http://www.eway.com.au) into your iOS app with this SDK! The eWAY iOS SDK provides the following functions:
- * Encrypt card details for passing through the merchantâ€™s servers to eWAY
- * Complete a payment on a userâ€™s iOS device
+ * Encrypt card details for passing through the merchant's servers to eWAY
+ * Complete a payment on a user's iOS device
  * Translate response messages to user friendly text
   
 Check out the [eWAY iOS SDK Getting Started Guide](https://eway.io/developers/sdk/ios-mobile-sdk-getting-started) and the Example project for details on how to integrate eWAY with your app.
 
 ## *** BETA ***
 
-This SDK is currently in beta and the API for the final release may differ. If youâ€™ve any feedback on the SDK, please let us know!
+This SDK is currently in beta and the API for the final release may differ. If you've any feedback on the SDK, please let us know!
 
 ## Requirements
 
@@ -31,7 +31,7 @@ An example project is included in the eWAY iOS SDK GitHub repository to demonstr
 
 Installing with [CocoaPods](https://cocoapods.org/) is quick and easy:
 
-Add the eWAY SDK to the projectâ€™s Podfile:
+Add the eWAY SDK to the project's Podfile:
 
 ```ruby
  pod 'eWAYPaymentsSDK', '1.0.0-Beta1'
