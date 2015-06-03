@@ -1,20 +1,50 @@
 # eWAY iOS SDK
 
-Quickly integrate eWAY into your iOS app with this SDK! This SDK provides handy functions to easily encrypt card data or process payments directly with eWAY.
+Quickly integrate [eWAY](http://www.eway.com.au) into your iOS app with this SDK! The eWAY iOS SDK provides the following functions:
+ * Encrypt card details for passing through the merchantâ€™s servers to eWAY
+ * Complete a payment on a userâ€™s iOS device
+ * Translate response messages to user friendly text
+  
+Check out the [eWAY iOS SDK Getting Started Guide](https://eway.io/developers/sdk/ios-mobile-sdk-getting-started) and the Example project for details on how to integrate eWAY with your app.
 
-## Usage
+## *** BETA ***
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+This SDK is currently in beta and the API for the final release may differ. If youâ€™ve any feedback on the SDK, please let us know!
+
+## Requirements
+
+The Beta eWAY iOS SDK supports iOS 7 and above.
+
+## Example project
+
+An example project is included in the eWAY iOS SDK GitHub repository to demonstrate the available functions. To use it:
+
+1. Clone the repository to your development machine
+ 
+    ```git clone https://github.com/eWAYPayment/eWAYPaymentsSDK.git```
+
+2. In the Example directory, run
+ 
+    ```pod install```
 
 ## Installation
 
-eWAYPaymentsSDK will soon be available available through [CocoaPods](http://cocoapods.org). 
+Installing with [CocoaPods](https://cocoapods.org/) is quick and easy:
 
-Until it is available, simply add the following line to your Podfile to install the library:
+Add the eWAY SDK to the projectâ€™s Podfile:
 
 ```ruby
-pod 'eWAYPaymentsSDK', :git=>'https://github.com/eWAYPayment/eWAYPaymentsSDK.git'
+ pod 'eWAYPaymentsSDK', '1.0.0-Beta1'
 ```
+
+*Note that the version is required while the eWAY iOS SDK is in beta.*
+
+Then run ```pod install``` to download and install the SDK
+
+##Usage
+
+For the a complete guide to using the eWAY iOS SDK, check out the [eWAY iOS SDK Getting Started](https://eway.io/developers/sdk/ios-mobile-sdk-getting-started) guide and along with the example project.
+
 
 ## License
 
