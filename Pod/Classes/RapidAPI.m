@@ -74,7 +74,7 @@
 - (id)validateWithRessponseType:(ResponseType)type
 {
     id object;
-
+    
     if (![self connectedToInternet]) {
         
         return [self errorObjectWithErrorCode:@"S9992" ressponseType:type];
@@ -149,12 +149,14 @@
     NSString *authStr = [NSString stringWithFormat:@"%@:%@", self.PublicAPIKey, @""];
     NSData *authData = [authStr dataUsingEncoding:NSUTF8StringEncoding];
     NSString *authValue = [NSString stringWithFormat:@"Basic %@", [authData base64EncodedStringWithOptions:0]];
+    NSString* userAgent = @"Mozilla/6.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/8.0 Mobile/10A5376e Safari/8536.25;eWAY SDK iOS 1.1";
     
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@encrypt",self.RapidEndpoint]]];
     [request setValue:authValue forHTTPHeaderField:@"Authorization"];
     
     [request setHTTPMethod:@"POST"];
+    [request setValue:userAgent forHTTPHeaderField:@"User-Agent"];
     [request setValue:@"application/json;charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
     [request setHTTPBody:[jsonString dataUsingEncoding:NSUTF8StringEncoding]];
     
@@ -169,7 +171,7 @@
             NSInteger statusCode = [(NSHTTPURLResponse *)response statusCode];
             
             if (statusCode == 443) {
-              encryptValuesResponse = [self errorObjectWithErrorCode:@"S9991" ressponseType:EncryptValuesResponseType];
+                encryptValuesResponse = [self errorObjectWithErrorCode:@"S9991" ressponseType:EncryptValuesResponseType];
                 completed(encryptValuesResponse);
                 return;
             }
@@ -219,13 +221,13 @@
         completed(submitPaymentResponse);
         return;
     }
-
+    
     
     //change json object to json string
     NSError *writeError = nil;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:paramObject options:NSJSONWritingPrettyPrinted error:&writeError];
     NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-//    NSLog(@"JSON Output: %@", jsonString);
+    //    NSLog(@"JSON Output: %@", jsonString);
     
     //request api encrypt
     NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -233,11 +235,13 @@
     NSString *authStr = [NSString stringWithFormat:@"%@:%@", self.PublicAPIKey, @""];
     NSData *authData = [authStr dataUsingEncoding:NSUTF8StringEncoding];
     NSString *authValue = [NSString stringWithFormat:@"Basic %@", [authData base64EncodedStringWithOptions:0]];
+    NSString* userAgent = @"Mozilla/6.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/8.0 Mobile/10A5376e Safari/8536.25;eWAY SDK iOS 1.1";
     
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@Payment",self.RapidEndpoint]]];
     [request setValue:authValue forHTTPHeaderField:@"Authorization"];
     [request setHTTPMethod:@"POST"];
+    [request setValue:userAgent forHTTPHeaderField:@"User-Agent"];
     [request setValue:@"application/json;charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
     [request setHTTPBody:[jsonString dataUsingEncoding:NSUTF8StringEncoding]];
     
@@ -251,7 +255,7 @@
             NSInteger statusCode = [(NSHTTPURLResponse *)response statusCode];
             
             if (statusCode == 443) {
-               submitPaymentResponse = [self errorObjectWithErrorCode:@"S9991" ressponseType:SubmitPaymentResponseType];
+                submitPaymentResponse = [self errorObjectWithErrorCode:@"S9991" ressponseType:SubmitPaymentResponseType];
                 completed(submitPaymentResponse);
                 return;
             }
@@ -312,7 +316,7 @@
     NSError *writeError = nil;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:paramObject options:NSJSONWritingPrettyPrinted error:&writeError];
     NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-//    NSLog(@"JSON Output: %@", jsonString);
+    //    NSLog(@"JSON Output: %@", jsonString);
     
     //request api encrypt
     NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -320,6 +324,7 @@
     NSString *authStr = [NSString stringWithFormat:@"%@:%@", self.PublicAPIKey, @""];
     NSData *authData = [authStr dataUsingEncoding:NSUTF8StringEncoding];
     NSString *authValue = [NSString stringWithFormat:@"Basic %@", [authData base64EncodedStringWithOptions:0]];
+    NSString* userAgent = @"Mozilla/6.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/8.0 Mobile/10A5376e Safari/8536.25;eWAY SDK iOS 1.1";
     
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@CodeLookup",self.RapidEndpoint]]];
@@ -327,6 +332,7 @@
     [request setValue:authValue forHTTPHeaderField:@"Authorization"];
     
     [request setHTTPMethod:@"POST"];
+    [request setValue:userAgent forHTTPHeaderField:@"User-Agent"];
     [request setValue:@"application/json;charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
     [request setHTTPBody:[jsonString dataUsingEncoding:NSUTF8StringEncoding]];
     
