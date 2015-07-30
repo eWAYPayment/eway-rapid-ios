@@ -5,7 +5,7 @@ Quickly integrate [eWAY](http://www.eway.com.au) into your iOS app with this SDK
  * Complete a payment on a user's iOS device
  * Translate response messages to user friendly text
   
-Check out the [eWAY iOS SDK Getting Started Guide](https://eway.io/developers/sdk/ios-mobile-sdk-getting-started) and the Example project for details on how to integrate eWAY with your app.
+Check out the [eWAY iOS SDK Getting Started Guide](https://eway.io/developers/sdk/ios) and the Example project for details on how to integrate eWAY with your app.
 
 ## *** BETA ***
 
