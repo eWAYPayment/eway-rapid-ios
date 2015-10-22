@@ -69,7 +69,8 @@
     NSString *deviceID = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     [dict setObject:deviceID forKey:@"DeviceID"];
     [dict setObject:@"" forKey:@"CustomerIP"];
-    [dict setObject:self.PartnerID forKey:@"PartnerID"];
+    if (self.PartnerID)
+        [dict setObject:self.PartnerID forKey:@"PartnerID"];
     [dict setObject:[self getTransactionType] forKey:@"TransactionType"];
     
     return dict;
