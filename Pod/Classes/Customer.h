@@ -23,6 +23,7 @@
 @property (nonatomic, strong) Address *Address; //Customer address
 @property (nonatomic, strong) NSString *Phone; //Customer Phone
 @property (nonatomic, strong) NSString *Mobile; // Customer Mobile Phone
+@property (nonatomic, strong) NSString *Email; // Customer Email
 @property (nonatomic, strong) NSString *Fax; //Customer Fax number
 @property (nonatomic, strong) NSString *Url; // URL for customer's site
 @property (nonatomic, strong) NSString *Comments; //Comments attached to this customer.

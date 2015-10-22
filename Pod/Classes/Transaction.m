@@ -47,7 +47,11 @@
     NSMutableDictionary *dict = [NSMutableDictionary new];
     
     [dict setObject:[self.Customer dictionary] forKey:@"Customer"];
-    [dict setObject:[self.ShippingDetails dictionary] forKey:@"ShippingAddress"];
+    
+    if (self.ShippingDetails)
+        [dict setObject:[self.ShippingDetails dictionary] forKey:@"ShippingAddress"];
+
+    
     [dict setObject:[self getShippingMethod] forKey:@"ShippingMethod"];
     
     NSMutableArray *arrItems = [NSMutableArray new];
@@ -56,7 +60,10 @@
     }
     
     [dict setObject:arrItems forKey:@"Items"];
-    [dict setObject:self.Options forKey:@"Options"];
+    
+    if (self.Options)
+        [dict setObject:self.Options forKey:@"Options"];
+    
     [dict setObject:[self.Payment dictionary] forKey:@"Payment"];
     
     NSString *deviceID = [[[UIDevice currentDevice] identifierForVendor] UUIDString];

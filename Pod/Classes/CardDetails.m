@@ -10,6 +10,22 @@
 
 @implementation CardDetails
 
+-(id)init{
+    self = [super init];
+    
+    if ( self )
+    {
+        self.Name = @"";
+        self.Number = @"";
+        self.ExpiryMonth = @"";
+        self.ExpiryYear = @"";
+        self.StartMonth = @"";
+        self.StartYear = @"";
+        self.CVN = @"";
+    }
+    
+    return self;
+}
 
 - (NSDictionary *)dictionary
 {

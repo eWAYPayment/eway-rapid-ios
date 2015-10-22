@@ -10,4 +10,20 @@
 
 @implementation Address
 
+-(id)init{
+    self = [super init];
+    
+    if ( self )
+    {
+        self.Street1 = @"";
+        self.Street2 = @"";
+        self.City = @"";
+        self.State = @"";
+        self.PostalCode = @"";
+        self.Country = @"";
+    }
+    
+    return self;
+}
+
 @end

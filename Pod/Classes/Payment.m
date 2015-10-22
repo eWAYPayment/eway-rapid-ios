@@ -10,6 +10,20 @@
 
 @implementation Payment
 
+-(id)init{
+    self = [super init];
+    
+    if ( self )
+    {
+        self.InvoiceNumber = @"";
+        self.InvoiceDescription = @"";
+        self.InvoiceReference = @"";
+        self.CurrencyCode = @"";
+    }
+    
+    return self;
+}
+
 - (NSDictionary *)dictionary
 {
     return [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:self.Payment],@"TotalAmount",

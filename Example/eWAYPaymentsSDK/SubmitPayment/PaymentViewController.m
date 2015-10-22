@@ -48,15 +48,15 @@
     customerObj.JobDescription = @"Developer";
     customerObj.Phone = @"09 889 0986";
     customerObj.Mobile = @"09 889 0986";
-    customerObj.Comments = @"";
-    customerObj.Fax = @"";
-    customerObj.Url = @"";
+    //customerObj.Comments = @"";
+    //customerObj.Fax = @"";
+    //customerObj.Url = @"";
     
     Address *customerAddress = [[Address alloc] init];
     customerAddress.Street1 = @"Level 5";
     customerAddress.Street2 = @"369 Queen Street";
     customerAddress.City = @"Auckland";
-    customerAddress.State = @"";
+    //customerAddress.State = @"";
     customerAddress.PostalCode = @"1010";
     customerAddress.Country = @"au";
     
@@ -67,49 +67,49 @@
     cardDetails.Number = @"4444333322221111";
     cardDetails.ExpiryMonth = @"12";
     cardDetails.ExpiryYear = @"16";
-    cardDetails.StartMonth = @"";
-    cardDetails.StartYear = @"";
+    //cardDetails.StartMonth = @"";
+    //cardDetails.StartYear = @"";
     cardDetails.CVN = @"123";
     customerObj.CardDetails = cardDetails;
     
     transaction.Customer = customerObj;
     
-    //add ShippingAddress
-    ShippingDetails *shippingAddress = [[ShippingDetails alloc] init];
-    shippingAddress.FirstName = @"John";
-    shippingAddress.LastName = @"Smith";
-    
-    Address *shipAddress = [[Address alloc] init];
-    shipAddress.Street1 = @"Level 5";
-    shipAddress.Street2 = @"369 Queen Street";
-    shipAddress.City = @"Auckland";
-    shipAddress.State = @"";
-    shipAddress.PostalCode = @"1010";
-    shipAddress.Country = @"nz";
-    shippingAddress.ShippingAddress = shipAddress;
-    
-    shippingAddress.Phone = @"09 889 0986";
-    transaction.ShippingDetails = shippingAddress;
-    
-    NSMutableArray *items = [NSMutableArray new];
-    for (NSInteger ii = 0 ; ii < 3 ; ii ++) {
-        LineItem *obj = [[LineItem alloc] init];
-        obj.SKU = [NSString stringWithFormat:@"SKU%ld",(long)ii];
-        obj.Description = [NSString stringWithFormat:@"Description%ld",(long)ii];
-        obj.Quantity = 1;
-        obj.UnitCost = 1;
-        obj.Tax = 0;
-        obj.Total = 1;
-        [items addObject:obj];
-    }
-    transaction.LineItems = items;
-    
-    NSMutableArray *Options = [NSMutableArray new];
-    [Options addObject:@{@"Value":@"Option1"}];
-    [Options addObject:@{@"Value":@"Option2"}];
-    [Options addObject:@{@"Value":@"Option3"}];
-    
-    transaction.Options = Options;
+//    //add ShippingAddress
+//    ShippingDetails *shippingAddress = [[ShippingDetails alloc] init];
+//    shippingAddress.FirstName = @"John";
+//    shippingAddress.LastName = @"Smith";
+//    
+//    Address *shipAddress = [[Address alloc] init];
+//    shipAddress.Street1 = @"Level 5";
+//    shipAddress.Street2 = @"369 Queen Street";
+//    shipAddress.City = @"Auckland";
+//    shipAddress.State = @"";
+//    shipAddress.PostalCode = @"1010";
+//    shipAddress.Country = @"nz";
+//    shippingAddress.ShippingAddress = shipAddress;
+//    
+//    shippingAddress.Phone = @"09 889 0986";
+//    transaction.ShippingDetails = shippingAddress;
+//    
+//    NSMutableArray *items = [NSMutableArray new];
+//    for (NSInteger ii = 0 ; ii < 3 ; ii ++) {
+//        LineItem *obj = [[LineItem alloc] init];
+//        obj.SKU = [NSString stringWithFormat:@"SKU%ld",(long)ii];
+//        obj.Description = [NSString stringWithFormat:@"Description%ld",(long)ii];
+//        obj.Quantity = 1;
+//        obj.UnitCost = 1;
+//        obj.Tax = 0;
+//        obj.Total = 1;
+//        [items addObject:obj];
+//    }
+//    transaction.LineItems = items;
+//    
+//    NSMutableArray *Options = [NSMutableArray new];
+//    [Options addObject:@{@"Value":@"Option1"}];
+//    [Options addObject:@{@"Value":@"Option2"}];
+//    [Options addObject:@{@"Value":@"Option3"}];
+//    
+//    transaction.Options = Options;
     
     //payment
     Payment *payment = [[Payment alloc] init];
@@ -138,7 +138,23 @@
         HIDELOADING(self.view)
         kCustomAlertWithParam(msg);
         
-        
+        if(submitPaymentResponse.Status == Accepted)
+        {
+            NSLog(@"EWAY: Accepted");
+        }
+        else if (submitPaymentResponse.Status == Success)
+        {
+            // The API Call completed successfully.
+            NSLog(@"EWAY: Success");
+        }
+        else if(submitPaymentResponse.Status == Error)
+        {
+            // An error occurred with the API Call.
+            [RapidAPI userMessage:submitPaymentResponse.Errors Language:@"EN" completed:^(UserMessageResponse *userMessageResponse) {
+                NSString *msg = [NSString stringWithFormat:@"%@ \n %@",userMessageResponse.Errors, userMessageResponse.Messages];
+                NSLog(@"EWAY ERROR: %@",msg);
+            }];
+        }
     }];
 }
 
