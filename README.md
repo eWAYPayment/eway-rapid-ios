@@ -37,13 +37,11 @@ An example project is included in the eWAY iOS SDK GitHub repository to demonstr
 
 Installing with [CocoaPods](https://cocoapods.org/) is quick and easy:
 
-Add the eWAY SDK to the project's Podfile:
+Add the eWAY iOS SDK to the project's Podfile:
 
 ```
- pod 'eWAYPaymentsSDK', '1.0.0'
+ pod 'eWAYPaymentsSDK'
 ```
-
-*Note that the version is required while the eWAY iOS SDK is in beta.*
 
 Then run ```pod install``` to download and install the SDK
 
