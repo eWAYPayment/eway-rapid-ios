@@ -227,7 +227,7 @@
     NSError *writeError = nil;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:paramObject options:NSJSONWritingPrettyPrinted error:&writeError];
     NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-        NSLog(@"JSON Output: %@", jsonString);
+    // NSLog(@"JSON Output: %@", jsonString);
     
     //request api encrypt
     NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
