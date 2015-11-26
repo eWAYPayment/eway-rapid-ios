@@ -19,11 +19,11 @@ For testing, get a free eWAY Partner account: https://www.eway.com.au/developers
 
 ## Requirements
 
-The eWAY iOS SDK supports iOS 7 and above. But for Apple Pay support, it support iOS 8 and above.
+The eWAY iOS SDK supports iOS 7 and above. But for [Apple Pay](https://www.eway.com.au/apple-pay) support, it requires iOS 8 and above.
 
 ## Example project
 
-An example project is included in the eWAY iOS SDK GitHub repository to demonstrate the available functions. To use it:
+2 example projects are included in the eWAY iOS SDK GitHub repository to demonstrate the available functions. To use it:
 
 1. Clone the repository to your development machine
  
