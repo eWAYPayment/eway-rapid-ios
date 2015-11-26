@@ -1,6 +1,7 @@
 # eWAY iOS SDK
 
 Quickly integrate [eWAY](http://www.eway.com.au) into your iOS app with this SDK! The eWAY iOS SDK provides the following functions:
+ * [Apple Pay](https://www.eway.com.au/apple-pay) Integration
  * Encrypt card details for passing through the merchant's servers to eWAY
  * Complete a payment on a user's iOS device
  * Translate response messages to user friendly text
