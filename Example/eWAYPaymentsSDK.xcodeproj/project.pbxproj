@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E17EB7E7E8801C0CCBB50B2 /* Pods_eWAYPaymentsSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9179280F29E290DD4D9E8AC0 /* Pods_eWAYPaymentsSDK_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1E17EB7E7E8801C0CCBB50B2 /* Pods_eWAYPaymentsSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9179280F29E290DD4D9E8AC0 /* Pods_eWAYPaymentsSDK_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -20,7 +20,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		6B718D11E71B39B1CE91BE8E /* Pods_eWAYPaymentsSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D1405F4987667EAE258F06 /* Pods_eWAYPaymentsSDK_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6B718D11E71B39B1CE91BE8E /* Pods_eWAYPaymentsSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D1405F4987667EAE258F06 /* Pods_eWAYPaymentsSDK_Example.framework */; };
 		E29FC4A21B1D79CF005C37C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29FC4A01B1D79CF005C37C9 /* Main.storyboard */; };
 		E29FC4CD1B1D7A99005C37C9 /* EncryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4A61B1D7A99005C37C9 /* EncryptViewController.m */; };
 		E29FC4CE1B1D7A99005C37C9 /* InputNVpairViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29FC4A81B1D7A99005C37C9 /* InputNVpairViewController.m */; };
@@ -671,6 +671,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "eWAYPaymentsSDK/eWAYPaymentsSDK-Prefix.pch";
 				INFOPLIST_FILE = "eWAYPaymentsSDK/eWAYPaymentsSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -686,6 +687,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "eWAYPaymentsSDK/eWAYPaymentsSDK-Prefix.pch";
 				INFOPLIST_FILE = "eWAYPaymentsSDK/eWAYPaymentsSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

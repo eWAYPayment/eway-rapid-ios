@@ -20,6 +20,13 @@ typedef enum : NSUInteger {
 } TransactionType;
 
 typedef enum : NSUInteger {
+    ProcessPayment, //This method allows merchants to process a standard payment.
+    CreateTokenCustomer, //This method allows merchants to create token customers without processing a payment.
+    TokenPayment, //This method allows merchants to process payments using Token customers they have stored with eWAY. Merchants can either load an existing token customer by passing in their TokenCustomerID in the initial request, or create a new Token customer by leaving the TokenCustomerID field blank (Transparent Redirect and Responsive Shared Page only).
+    Authorise,//This method allows merchants to reserve funds on a customer’s credit card without charging it.
+} Method;
+
+typedef enum : NSUInteger {
     Unknown, //Method is unknown.
     LowCost, //A low cost method is used
     DesignatedByCustomer, //The customer has chosen the method

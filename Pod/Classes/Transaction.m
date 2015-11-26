@@ -42,6 +42,18 @@
     return res;
 }
 
+- (NSString *)getMethod
+{
+    NSString *res = @"";
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"ProcessPayment",[NSNumber numberWithInteger:ProcessPayment],
+                          @"CreateTokenCustomer",[NSNumber numberWithInteger:CreateTokenCustomer],
+                          @"TokenPayment",[NSNumber numberWithInteger:TokenPayment],
+                          @"Authorise",[NSNumber numberWithInteger:Authorise],
+                          nil];
+    res = [dict objectForKey:[NSNumber numberWithInteger:self.Method]];
+    return res;
+}
+
 - (NSDictionary *)dictionary
 {
     NSMutableDictionary *dict = [NSMutableDictionary new];
@@ -64,7 +76,8 @@
     if (self.Options)
         [dict setObject:self.Options forKey:@"Options"];
     
-    [dict setObject:[self.Payment dictionary] forKey:@"Payment"];
+    if (self.Payment)
+        [dict setObject:[self.Payment dictionary] forKey:@"Payment"];
     
     NSString *deviceID = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     [dict setObject:deviceID forKey:@"DeviceID"];
@@ -72,6 +85,8 @@
     if (self.PartnerID)
         [dict setObject:self.PartnerID forKey:@"PartnerID"];
     [dict setObject:[self getTransactionType] forKey:@"TransactionType"];
+    
+    [dict setObject:[self getMethod] forKey:@"Method"];
     
     return dict;
 }

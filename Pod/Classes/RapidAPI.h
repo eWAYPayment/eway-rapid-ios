@@ -30,4 +30,7 @@ typedef enum : NSUInteger {
 + (void)submitPayment:(Transaction *)Transaction completed:(void (^)(SubmitPaymentResponse *submitPaymentResponse))completed;
 + (void)userMessage:(NSString *)ErrorCodes Language:(NSString *)Language completed:(void (^)(UserMessageResponse *userMessageResponse))completed;
 
+- (id)validateWithRessponseType:(ResponseType)type;
+- (id)errorObjectWithErrorCode:(NSString *)errorCode ressponseType:(ResponseType)type;
+
 @end
