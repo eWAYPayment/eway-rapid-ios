@@ -1,5 +1,7 @@
 # eWAY iOS SDK
 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods compatible](https://img.shields.io/cocoapods/v/eWAYPaymentsSDK.svg?maxAge=2592000)](https://cocoapods.org/)
+
 Quickly integrate [eWAY](http://www.eway.com.au) into your iOS app with this SDK! The eWAY iOS SDK provides the following functions:
  * [Apple Pay](https://www.eway.com.au/apple-pay) Integration
  * Encrypt card details for passing through the merchant's servers to eWAY
