@@ -8,34 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		03A2C3B31CEAD04A002185DA /* eWAYPaymentsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3B21CEAD04A002185DA /* eWAYPaymentsSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		03A2C3D91CEAD169002185DA /* Address.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3BB1CEAD169002185DA /* Address.h */; };
+		03A2C3D91CEAD169002185DA /* Address.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3BB1CEAD169002185DA /* Address.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03A2C3DA1CEAD169002185DA /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3BC1CEAD169002185DA /* Address.m */; };
-		03A2C3DB1CEAD169002185DA /* CardDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3BD1CEAD169002185DA /* CardDetails.h */; };
+		03A2C3DB1CEAD169002185DA /* CardDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3BD1CEAD169002185DA /* CardDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03A2C3DC1CEAD169002185DA /* CardDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3BE1CEAD169002185DA /* CardDetails.m */; };
-		03A2C3DD1CEAD169002185DA /* Customer.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3BF1CEAD169002185DA /* Customer.h */; };
+		03A2C3DD1CEAD169002185DA /* Customer.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3BF1CEAD169002185DA /* Customer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03A2C3DE1CEAD169002185DA /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3C01CEAD169002185DA /* Customer.m */; };
-		03A2C3DF1CEAD169002185DA /* EncryptValuesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3C11CEAD169002185DA /* EncryptValuesResponse.h */; };
+		03A2C3DF1CEAD169002185DA /* EncryptValuesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3C11CEAD169002185DA /* EncryptValuesResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03A2C3E01CEAD169002185DA /* EncryptValuesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3C21CEAD169002185DA /* EncryptValuesResponse.m */; };
-		03A2C3E11CEAD169002185DA /* Enumerated.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3C31CEAD169002185DA /* Enumerated.h */; };
-		03A2C3E31CEAD169002185DA /* LineItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3C51CEAD169002185DA /* LineItem.h */; };
+		03A2C3E11CEAD169002185DA /* Enumerated.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3C31CEAD169002185DA /* Enumerated.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03A2C3E31CEAD169002185DA /* LineItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3C51CEAD169002185DA /* LineItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03A2C3E41CEAD169002185DA /* LineItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3C61CEAD169002185DA /* LineItem.m */; };
-		03A2C3E51CEAD169002185DA /* NVpair.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3C71CEAD169002185DA /* NVpair.h */; };
+		03A2C3E51CEAD169002185DA /* NVpair.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3C71CEAD169002185DA /* NVpair.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03A2C3E61CEAD169002185DA /* NVpair.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3C81CEAD169002185DA /* NVpair.m */; };
-		03A2C3E71CEAD169002185DA /* Payment.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3C91CEAD169002185DA /* Payment.h */; };
+		03A2C3E71CEAD169002185DA /* Payment.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3C91CEAD169002185DA /* Payment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03A2C3E81CEAD169002185DA /* Payment.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3CA1CEAD169002185DA /* Payment.m */; };
-		03A2C3E91CEAD169002185DA /* RapidAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3CB1CEAD169002185DA /* RapidAPI.h */; };
+		03A2C3E91CEAD169002185DA /* RapidAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3CB1CEAD169002185DA /* RapidAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03A2C3EA1CEAD169002185DA /* RapidAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3CC1CEAD169002185DA /* RapidAPI.m */; };
-		03A2C3EB1CEAD169002185DA /* RapidAPI+ApplePay.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3CD1CEAD169002185DA /* RapidAPI+ApplePay.h */; };
+		03A2C3EB1CEAD169002185DA /* RapidAPI+ApplePay.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3CD1CEAD169002185DA /* RapidAPI+ApplePay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03A2C3EC1CEAD169002185DA /* RapidAPI+ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3CE1CEAD169002185DA /* RapidAPI+ApplePay.m */; };
-		03A2C3ED1CEAD169002185DA /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3CF1CEAD169002185DA /* Reachability.h */; };
+		03A2C3ED1CEAD169002185DA /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3CF1CEAD169002185DA /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03A2C3EE1CEAD169002185DA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3D01CEAD169002185DA /* Reachability.m */; };
-		03A2C3EF1CEAD169002185DA /* ShippingDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3D11CEAD169002185DA /* ShippingDetails.h */; };
+		03A2C3EF1CEAD169002185DA /* ShippingDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3D11CEAD169002185DA /* ShippingDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03A2C3F01CEAD169002185DA /* ShippingDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3D21CEAD169002185DA /* ShippingDetails.m */; };
-		03A2C3F11CEAD169002185DA /* SubmitPaymentResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3D31CEAD169002185DA /* SubmitPaymentResponse.h */; };
+		03A2C3F11CEAD169002185DA /* SubmitPaymentResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3D31CEAD169002185DA /* SubmitPaymentResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03A2C3F21CEAD169002185DA /* SubmitPaymentResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3D41CEAD169002185DA /* SubmitPaymentResponse.m */; };
-		03A2C3F31CEAD169002185DA /* Transaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3D51CEAD169002185DA /* Transaction.h */; };
+		03A2C3F31CEAD169002185DA /* Transaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3D51CEAD169002185DA /* Transaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03A2C3F41CEAD169002185DA /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3D61CEAD169002185DA /* Transaction.m */; };
-		03A2C3F51CEAD169002185DA /* UserMessageResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3D71CEAD169002185DA /* UserMessageResponse.h */; };
+		03A2C3F51CEAD169002185DA /* UserMessageResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3D71CEAD169002185DA /* UserMessageResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03A2C3F61CEAD169002185DA /* UserMessageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3D81CEAD169002185DA /* UserMessageResponse.m */; };
 /* End PBXBuildFile section */
 
