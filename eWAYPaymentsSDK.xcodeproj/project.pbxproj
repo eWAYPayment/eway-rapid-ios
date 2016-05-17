@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03A2C3B31CEAD04A002185DA /* eWAYPaymentsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3B21CEAD04A002185DA /* eWAYPaymentsSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03A2C3D91CEAD169002185DA /* Address.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3BB1CEAD169002185DA /* Address.h */; };
+		03A2C3DA1CEAD169002185DA /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3BC1CEAD169002185DA /* Address.m */; };
+		03A2C3DB1CEAD169002185DA /* CardDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3BD1CEAD169002185DA /* CardDetails.h */; };
+		03A2C3DC1CEAD169002185DA /* CardDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3BE1CEAD169002185DA /* CardDetails.m */; };
+		03A2C3DD1CEAD169002185DA /* Customer.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3BF1CEAD169002185DA /* Customer.h */; };
+		03A2C3DE1CEAD169002185DA /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3C01CEAD169002185DA /* Customer.m */; };
+		03A2C3DF1CEAD169002185DA /* EncryptValuesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3C11CEAD169002185DA /* EncryptValuesResponse.h */; };
+		03A2C3E01CEAD169002185DA /* EncryptValuesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3C21CEAD169002185DA /* EncryptValuesResponse.m */; };
+		03A2C3E11CEAD169002185DA /* Enumerated.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3C31CEAD169002185DA /* Enumerated.h */; };
+		03A2C3E31CEAD169002185DA /* LineItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3C51CEAD169002185DA /* LineItem.h */; };
+		03A2C3E41CEAD169002185DA /* LineItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3C61CEAD169002185DA /* LineItem.m */; };
+		03A2C3E51CEAD169002185DA /* NVpair.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3C71CEAD169002185DA /* NVpair.h */; };
+		03A2C3E61CEAD169002185DA /* NVpair.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3C81CEAD169002185DA /* NVpair.m */; };
+		03A2C3E71CEAD169002185DA /* Payment.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3C91CEAD169002185DA /* Payment.h */; };
+		03A2C3E81CEAD169002185DA /* Payment.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3CA1CEAD169002185DA /* Payment.m */; };
+		03A2C3E91CEAD169002185DA /* RapidAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3CB1CEAD169002185DA /* RapidAPI.h */; };
+		03A2C3EA1CEAD169002185DA /* RapidAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3CC1CEAD169002185DA /* RapidAPI.m */; };
+		03A2C3EB1CEAD169002185DA /* RapidAPI+ApplePay.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3CD1CEAD169002185DA /* RapidAPI+ApplePay.h */; };
+		03A2C3EC1CEAD169002185DA /* RapidAPI+ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3CE1CEAD169002185DA /* RapidAPI+ApplePay.m */; };
+		03A2C3ED1CEAD169002185DA /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3CF1CEAD169002185DA /* Reachability.h */; };
+		03A2C3EE1CEAD169002185DA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3D01CEAD169002185DA /* Reachability.m */; };
+		03A2C3EF1CEAD169002185DA /* ShippingDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3D11CEAD169002185DA /* ShippingDetails.h */; };
+		03A2C3F01CEAD169002185DA /* ShippingDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3D21CEAD169002185DA /* ShippingDetails.m */; };
+		03A2C3F11CEAD169002185DA /* SubmitPaymentResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3D31CEAD169002185DA /* SubmitPaymentResponse.h */; };
+		03A2C3F21CEAD169002185DA /* SubmitPaymentResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3D41CEAD169002185DA /* SubmitPaymentResponse.m */; };
+		03A2C3F31CEAD169002185DA /* Transaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3D51CEAD169002185DA /* Transaction.h */; };
+		03A2C3F41CEAD169002185DA /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3D61CEAD169002185DA /* Transaction.m */; };
+		03A2C3F51CEAD169002185DA /* UserMessageResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A2C3D71CEAD169002185DA /* UserMessageResponse.h */; };
+		03A2C3F61CEAD169002185DA /* UserMessageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A2C3D81CEAD169002185DA /* UserMessageResponse.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03A2C3AF1CEAD04A002185DA /* eWAYPaymentsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = eWAYPaymentsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A2C3B21CEAD04A002185DA /* eWAYPaymentsSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eWAYPaymentsSDK.h; sourceTree = "<group>"; };
+		03A2C3B41CEAD04A002185DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03A2C3BB1CEAD169002185DA /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
+		03A2C3BC1CEAD169002185DA /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
+		03A2C3BD1CEAD169002185DA /* CardDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardDetails.h; sourceTree = "<group>"; };
+		03A2C3BE1CEAD169002185DA /* CardDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardDetails.m; sourceTree = "<group>"; };
+		03A2C3BF1CEAD169002185DA /* Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
+		03A2C3C01CEAD169002185DA /* Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Customer.m; sourceTree = "<group>"; };
+		03A2C3C11CEAD169002185DA /* EncryptValuesResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptValuesResponse.h; sourceTree = "<group>"; };
+		03A2C3C21CEAD169002185DA /* EncryptValuesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptValuesResponse.m; sourceTree = "<group>"; };
+		03A2C3C31CEAD169002185DA /* Enumerated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enumerated.h; sourceTree = "<group>"; };
+		03A2C3C51CEAD169002185DA /* LineItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineItem.h; sourceTree = "<group>"; };
+		03A2C3C61CEAD169002185DA /* LineItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineItem.m; sourceTree = "<group>"; };
+		03A2C3C71CEAD169002185DA /* NVpair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVpair.h; sourceTree = "<group>"; };
+		03A2C3C81CEAD169002185DA /* NVpair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVpair.m; sourceTree = "<group>"; };
+		03A2C3C91CEAD169002185DA /* Payment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Payment.h; sourceTree = "<group>"; };
+		03A2C3CA1CEAD169002185DA /* Payment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Payment.m; sourceTree = "<group>"; };
+		03A2C3CB1CEAD169002185DA /* RapidAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RapidAPI.h; sourceTree = "<group>"; };
+		03A2C3CC1CEAD169002185DA /* RapidAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RapidAPI.m; sourceTree = "<group>"; };
+		03A2C3CD1CEAD169002185DA /* RapidAPI+ApplePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RapidAPI+ApplePay.h"; sourceTree = "<group>"; };
+		03A2C3CE1CEAD169002185DA /* RapidAPI+ApplePay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RapidAPI+ApplePay.m"; sourceTree = "<group>"; };
+		03A2C3CF1CEAD169002185DA /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		03A2C3D01CEAD169002185DA /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		03A2C3D11CEAD169002185DA /* ShippingDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShippingDetails.h; sourceTree = "<group>"; };
+		03A2C3D21CEAD169002185DA /* ShippingDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShippingDetails.m; sourceTree = "<group>"; };
+		03A2C3D31CEAD169002185DA /* SubmitPaymentResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitPaymentResponse.h; sourceTree = "<group>"; };
+		03A2C3D41CEAD169002185DA /* SubmitPaymentResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitPaymentResponse.m; sourceTree = "<group>"; };
+		03A2C3D51CEAD169002185DA /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		03A2C3D61CEAD169002185DA /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
+		03A2C3D71CEAD169002185DA /* UserMessageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMessageResponse.h; sourceTree = "<group>"; };
+		03A2C3D81CEAD169002185DA /* UserMessageResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMessageResponse.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03A2C3AB1CEAD04A002185DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03A2C3A51CEAD04A002185DA = {
+			isa = PBXGroup;
+			children = (
+				03A2C3B11CEAD04A002185DA /* eWAYPaymentsSDK */,
+				03A2C3B01CEAD04A002185DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03A2C3B01CEAD04A002185DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03A2C3AF1CEAD04A002185DA /* eWAYPaymentsSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03A2C3B11CEAD04A002185DA /* eWAYPaymentsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				03A2C3F71CEAD418002185DA /* Assets */,
+				03A2C3BA1CEAD14B002185DA /* Classes */,
+				03A2C3B21CEAD04A002185DA /* eWAYPaymentsSDK.h */,
+				03A2C3B41CEAD04A002185DA /* Info.plist */,
+			);
+			path = eWAYPaymentsSDK;
+			sourceTree = "<group>";
+		};
+		03A2C3BA1CEAD14B002185DA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				03A2C3BB1CEAD169002185DA /* Address.h */,
+				03A2C3BC1CEAD169002185DA /* Address.m */,
+				03A2C3BD1CEAD169002185DA /* CardDetails.h */,
+				03A2C3BE1CEAD169002185DA /* CardDetails.m */,
+				03A2C3BF1CEAD169002185DA /* Customer.h */,
+				03A2C3C01CEAD169002185DA /* Customer.m */,
+				03A2C3C11CEAD169002185DA /* EncryptValuesResponse.h */,
+				03A2C3C21CEAD169002185DA /* EncryptValuesResponse.m */,
+				03A2C3C31CEAD169002185DA /* Enumerated.h */,
+				03A2C3C51CEAD169002185DA /* LineItem.h */,
+				03A2C3C61CEAD169002185DA /* LineItem.m */,
+				03A2C3C71CEAD169002185DA /* NVpair.h */,
+				03A2C3C81CEAD169002185DA /* NVpair.m */,
+				03A2C3C91CEAD169002185DA /* Payment.h */,
+				03A2C3CA1CEAD169002185DA /* Payment.m */,
+				03A2C3CB1CEAD169002185DA /* RapidAPI.h */,
+				03A2C3CC1CEAD169002185DA /* RapidAPI.m */,
+				03A2C3CD1CEAD169002185DA /* RapidAPI+ApplePay.h */,
+				03A2C3CE1CEAD169002185DA /* RapidAPI+ApplePay.m */,
+				03A2C3CF1CEAD169002185DA /* Reachability.h */,
+				03A2C3D01CEAD169002185DA /* Reachability.m */,
+				03A2C3D11CEAD169002185DA /* ShippingDetails.h */,
+				03A2C3D21CEAD169002185DA /* ShippingDetails.m */,
+				03A2C3D31CEAD169002185DA /* SubmitPaymentResponse.h */,
+				03A2C3D41CEAD169002185DA /* SubmitPaymentResponse.m */,
+				03A2C3D51CEAD169002185DA /* Transaction.h */,
+				03A2C3D61CEAD169002185DA /* Transaction.m */,
+				03A2C3D71CEAD169002185DA /* UserMessageResponse.h */,
+				03A2C3D81CEAD169002185DA /* UserMessageResponse.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		03A2C3F71CEAD418002185DA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		03A2C3AC1CEAD04A002185DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A2C3E11CEAD169002185DA /* Enumerated.h in Headers */,
+				03A2C3ED1CEAD169002185DA /* Reachability.h in Headers */,
+				03A2C3EB1CEAD169002185DA /* RapidAPI+ApplePay.h in Headers */,
+				03A2C3DF1CEAD169002185DA /* EncryptValuesResponse.h in Headers */,
+				03A2C3F11CEAD169002185DA /* SubmitPaymentResponse.h in Headers */,
+				03A2C3B31CEAD04A002185DA /* eWAYPaymentsSDK.h in Headers */,
+				03A2C3E91CEAD169002185DA /* RapidAPI.h in Headers */,
+				03A2C3DB1CEAD169002185DA /* CardDetails.h in Headers */,
+				03A2C3F51CEAD169002185DA /* UserMessageResponse.h in Headers */,
+				03A2C3F31CEAD169002185DA /* Transaction.h in Headers */,
+				03A2C3DD1CEAD169002185DA /* Customer.h in Headers */,
+				03A2C3EF1CEAD169002185DA /* ShippingDetails.h in Headers */,
+				03A2C3D91CEAD169002185DA /* Address.h in Headers */,
+				03A2C3E71CEAD169002185DA /* Payment.h in Headers */,
+				03A2C3E51CEAD169002185DA /* NVpair.h in Headers */,
+				03A2C3E31CEAD169002185DA /* LineItem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		03A2C3AE1CEAD04A002185DA /* eWAYPaymentsSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03A2C3B71CEAD04A002185DA /* Build configuration list for PBXNativeTarget "eWAYPaymentsSDK" */;
+			buildPhases = (
+				03A2C3AA1CEAD04A002185DA /* Sources */,
+				03A2C3AB1CEAD04A002185DA /* Frameworks */,
+				03A2C3AC1CEAD04A002185DA /* Headers */,
+				03A2C3AD1CEAD04A002185DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eWAYPaymentsSDK;
+			productName = eWAYPaymentsSDK;
+			productReference = 03A2C3AF1CEAD04A002185DA /* eWAYPaymentsSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03A2C3A61CEAD04A002185DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "JR Apps";
+				TargetAttributes = {
+					03A2C3AE1CEAD04A002185DA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 03A2C3A91CEAD04A002185DA /* Build configuration list for PBXProject "eWAYPaymentsSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 03A2C3A51CEAD04A002185DA;
+			productRefGroup = 03A2C3B01CEAD04A002185DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03A2C3AE1CEAD04A002185DA /* eWAYPaymentsSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03A2C3AD1CEAD04A002185DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03A2C3AA1CEAD04A002185DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A2C3DC1CEAD169002185DA /* CardDetails.m in Sources */,
+				03A2C3DE1CEAD169002185DA /* Customer.m in Sources */,
+				03A2C3F41CEAD169002185DA /* Transaction.m in Sources */,
+				03A2C3E01CEAD169002185DA /* EncryptValuesResponse.m in Sources */,
+				03A2C3E81CEAD169002185DA /* Payment.m in Sources */,
+				03A2C3EE1CEAD169002185DA /* Reachability.m in Sources */,
+				03A2C3DA1CEAD169002185DA /* Address.m in Sources */,
+				03A2C3F61CEAD169002185DA /* UserMessageResponse.m in Sources */,
+				03A2C3E41CEAD169002185DA /* LineItem.m in Sources */,
+				03A2C3E61CEAD169002185DA /* NVpair.m in Sources */,
+				03A2C3F01CEAD169002185DA /* ShippingDetails.m in Sources */,
+				03A2C3EA1CEAD169002185DA /* RapidAPI.m in Sources */,
+				03A2C3EC1CEAD169002185DA /* RapidAPI+ApplePay.m in Sources */,
+				03A2C3F21CEAD169002185DA /* SubmitPaymentResponse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		03A2C3B51CEAD04A002185DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		03A2C3B61CEAD04A002185DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		03A2C3B81CEAD04A002185DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = eWAYPaymentsSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.eway.iOS-Payments-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		03A2C3B91CEAD04A002185DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = eWAYPaymentsSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.eway.iOS-Payments-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03A2C3A91CEAD04A002185DA /* Build configuration list for PBXProject "eWAYPaymentsSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03A2C3B51CEAD04A002185DA /* Debug */,
+				03A2C3B61CEAD04A002185DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03A2C3B71CEAD04A002185DA /* Build configuration list for PBXNativeTarget "eWAYPaymentsSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03A2C3B81CEAD04A002185DA /* Debug */,
+				03A2C3B91CEAD04A002185DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03A2C3A61CEAD04A002185DA /* Project object */;
+}

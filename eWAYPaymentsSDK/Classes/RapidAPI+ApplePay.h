@@ -6,9 +6,9 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 #import "RapidAPI.h"
-#import <PassKit/PassKit.h>
+@import PassKit;
 
 @interface RapidAPI (ApplePay)
 

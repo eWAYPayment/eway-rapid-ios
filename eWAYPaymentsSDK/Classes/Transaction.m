@@ -8,7 +8,7 @@
 
 #import "Transaction.h"
 #import "LineItem.h"
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 @implementation Transaction
 
