@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 eWAY. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 //This is used primarily as a container for a name­value pair to be consumed and returned by the encryption method requests and responses.
 @interface NVpair : NSObject

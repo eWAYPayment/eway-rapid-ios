@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 eWAY. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 //This is used to return the translated error codes to the caller along with any errors that may have occurred as a result of the method call.
 //In the event that an error occurs, the Messages property will be empty.

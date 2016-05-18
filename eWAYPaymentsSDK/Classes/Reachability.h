@@ -25,9 +25,8 @@
  POSSIBILITY OF SUCH DAMAGE. 
  */
 
-#import <Foundation/Foundation.h>
-#import <SystemConfiguration/SystemConfiguration.h>
-
+@import Foundation;
+@import SystemConfiguration;
 
 /** 
  * Create NS_ENUM macro if it does not exist on the targeted version of iOS or OS X.
