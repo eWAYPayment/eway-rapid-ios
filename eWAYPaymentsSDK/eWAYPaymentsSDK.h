@@ -22,8 +22,9 @@ FOUNDATION_EXPORT const unsigned char eWAYPaymentsSDKVersionString[];
 #import <eWAYPaymentsSDK/LineItem.h>
 #import <eWAYPaymentsSDK/NVpair.h>
 #import <eWAYPaymentsSDK/Payment.h>
+#import <eWAYPaymentsSDK/RapidAPI+ApplePay.h>
 #import <eWAYPaymentsSDK/RapidAPI.h>
+#import <eWAYPaymentsSDK/Reachability.h>
 #import <eWAYPaymentsSDK/ShippingDetails.h>
 #import <eWAYPaymentsSDK/SubmitPaymentResponse.h>
 #import <eWAYPaymentsSDK/Transaction.h>
-#import <eWAYPaymentsSDK/UserMessageResponse.h>

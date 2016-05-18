@@ -24,7 +24,7 @@ typedef enum : NSUInteger {
 @property (nonatomic, strong) NSString *RapidEndpoint; //Sets the endpoint to "Production" "Sandbox" or a specific URL.
 @property (nonatomic, strong) NSString *PublicAPIKey; //Sets the Merchant's Public API Key
 
-+ (id)sharedManager;
++ (instancetype)sharedManager;
 
 + (void)encryptValues:(NSArray *)Values completed:(void (^)(EncryptValuesResponse *encryptValuesResponse))completed;
 + (void)submitPayment:(Transaction *)Transaction completed:(void (^)(SubmitPaymentResponse *submitPaymentResponse))completed;
