@@ -86,23 +86,16 @@ requiredShippingAddressFields:(PKAddressField)requiredShippingAddressFields
     NSMutableDictionary *paramObject = [NSMutableDictionary new];
     @try {
         Transaction *tran = [[Transaction alloc] init];
+        Customer *customerObj = [[Customer alloc] init];
         
         tran.TransactionType = transactionType;
         tran.Method = method;
         
         if (payment.shippingAddress) {
-            
-            
-            Customer *customerObj = [[Customer alloc] init];
             customerObj.FirstName = (__bridge_transfer NSString*)ABRecordCopyValue(payment.shippingAddress, kABPersonFirstNameProperty);
             customerObj.LastName = (__bridge_transfer NSString*)ABRecordCopyValue(payment.shippingAddress, kABPersonLastNameProperty);
             
-            //customerObj.CompanyName = @"";
-            //customerObj.Phone = @"09 889 0986";
-            //customerObj.Mobile = @"09 889 0986";
-            
             Address *address = [[Address alloc] init];
-            
             ABMultiValueRef addressValues = ABRecordCopyValue(payment.shippingAddress, kABPersonAddressProperty);
             if (addressValues != NULL) {
                 if (ABMultiValueGetCount(addressValues) > 0) {
@@ -132,31 +125,25 @@ requiredShippingAddressFields:(PKAddressField)requiredShippingAddressFields
                 }
                 CFRelease(addressValues);
             }
+            
             customerObj.Address = address;
             
             ShippingDetails *shipping = [[ShippingDetails alloc] init];
             shipping.FirstName = (__bridge_transfer NSString*)ABRecordCopyValue(payment.shippingAddress, kABPersonFirstNameProperty);
             shipping.LastName = (__bridge_transfer NSString*)ABRecordCopyValue(payment.shippingAddress, kABPersonLastNameProperty);
             shipping.ShippingAddress = address;
-            
-            tran.Customer = customerObj;
             tran.ShippingDetails = shipping;
         }
         
+        tran.Customer = customerObj;
         
         NSDictionary *paymentData = [NSJSONSerialization JSONObjectWithData:payment.token.paymentData options:NSJSONReadingAllowFragments error:nil];
         
-        
         NSMutableDictionary *applePayObject = [NSMutableDictionary new];
-        
         [applePayObject setObject:[paymentData objectForKey:@"data"] forKey:@"data"];
-        
         [applePayObject setObject:[paymentData objectForKey:@"header"] forKey:@"header"];
-        
         [applePayObject setObject:[paymentData objectForKey:@"signature"] forKey:@"signature"];
-        
         [applePayObject setObject:[paymentData objectForKey:@"version"] forKey:@"version"];
-        
         
         if (payment.token.paymentInstrumentName)
             [applePayObject setObject:payment.token.paymentInstrumentName forKey:@"PaymentInstrumentName"];

@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "eWAYPaymentsSDK"
-  s.version          = "1.1.0"
+  s.version          = "1.1.1"
   s.summary          = "eWAYPaymentsSDK allows eway payment to be performed directly from any compatible iOS device."
   s.description      = "eWAYPaymentsSDK allows eway payment to be performed directly from any compatible iOS device. Apple Pay is supported as well for those device with TouchID. Below are steps needed to be done before using the SDK in your application"
   s.homepage         = "https://www.eway.io/developers/sdk/ios"
